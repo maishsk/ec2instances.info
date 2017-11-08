@@ -8,7 +8,7 @@ import locale
 
 # Following advice from https://stackoverflow.com/a/1779324/216138
 # The locale must be installed in the system, and it must be one where ',' is
-# the thousans separator and '.' is the decimal fraction separator.
+# the thousands separator and '.' is the decimal fraction separator.
 locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 
@@ -534,7 +534,7 @@ def add_linux_ami_info(instances):
 
 
 def add_vpconly_detail(instances):
-    # specific instances can be lanuched in VPC only
+    # specific instances can be launched in VPC only
     # http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html#vpc-only-instance-types
     vpc_only_families = ('c5', 'c4', 'f1', 'g3', 'i3', 'm4', 'p2', 'r4', 't2', 'x1')
     for i in instances:
